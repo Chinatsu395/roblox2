@@ -1,0 +1,127 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
+
+local Window = OrionLib:MakeWindow({Name = "无脚本", HidePremium = false, SaveConfig = true,IntroText = "无脚本", ConfigFolder = "无脚本"})
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "无脚本通知"; Text ="禁止外传🚫外传禁止sm"; Duration = 4; })
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "无脚本通知"; Text ="感谢游玩无脚本"; Duration = 4; })
+
+local about = Window:MakeTab({
+    Name = "公告",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+about:AddParagraph("缝合脚本")
+about:AddParagraph("免费使用")
+about:AddParagraph("禁止外传sm")
+about:AddParagraph("用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("支持忍者注入:"," "..identifyexecutor().."")
+about:AddParagraph("当前服务器ID"," "..game.GameId.."")
+
+local Tab =Window:MakeTab({
+	Name = "无脚本作者",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "复制无脚本快手",
+	Callback = function()
+     setclipboard("878028840")
+  	end
+})
+
+OrionLib:MakeNotification({
+	Name = "无脚本测试版",
+	Content = "欢迎使用",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+
+})
+
+local Tab = Window:MakeTab({
+
+    Name = "通用",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+local Section = Tab:AddSection({
+
+	Name = "功能随便做的"
+
+})
+
+Tab:AddButton({
+	Name = "飞行",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Chinatsu395/www/refs/heads/main/%E6%97%A0%E8%84%9A%E6%9C%AC%E9%A3%9E%E8%A1%8C%E6%B1%89%E5%8C%96%E7%89%88"))()
+        end
+})
+
+local Tab = Window:MakeTab({
+
+    Name = "其他脚本",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+local Section = Tab:AddSection({
+
+	Name = "看不见的入侵脚本"
+
+})
+
+Tab:AddButton({
+	Name = "k00pkidd",
+	Callback = function()
+     getgenv().LS="k00pkidd" loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-k00pkidd-39401"))()
+        end
+})
+
+Tab:AddButton({
+	Name = "4x2x9x4x0",
+	Callback = function()
+     getgenv().LS="4x2x9x4x0" loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-kuncicoco-gui-by-4x2x9x4x0-35666"))()
+        end
+})
+
+Tab:AddButton({
+	Name = "1x1x1x1",
+	Callback = function()
+     getgenv().LS="1x1x1x1" loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-1x1x1x1-gui-44403"))()
+        end
+})
+
+Tab:AddButton({
+	Name = "tuboos93",
+	Callback = function()
+     getgenv().LS="tuboos93" loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-tuboos93-gui-v3-reupload-31996"))()
+        end
+})
+
+Tab:AddButton({
+	Name = "Xpress045",
+	Callback = function()
+     getgenv().LS="Xpress045" loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-Xpress045-GUI-35134"))()
+        end
+})
+
+local Section = Tab:AddSection({
+
+	Name = "客户端脚本"
+
+})
+
+Tab:AddButton({
+	Name = "约翰多脚本",
+	Callback = function()
+     getgenv().LS="约翰多脚本" loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-John-doe-up-by-gojohdkaisenkt-34198"))()
+        end
+})
